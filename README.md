@@ -12,8 +12,7 @@ stampa un messaggio appropriato sull’esito del controllo.
 2. Creo un Array con l email che possono accedere. 
 
 3. Scorro all Array per controllare che l email inserita, sia prensente nella lista.
-
-4. SE
+    SE
     -- L email è presente, stampo un messaggio di conferma
     Altrimenti se
     -- L email non è presente, stampo un messaggio di accesso negato.
