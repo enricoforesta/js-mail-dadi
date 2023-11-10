@@ -2,6 +2,7 @@
 
 // variabile
 const elementEmail = String(prompt("inserisci la tua Email"));
+let elementAccesso = false;
 console.log({ elementEmail });
 
 //Array
@@ -10,11 +11,20 @@ console.log(elementListaAccessi);
 
 // Ciclo
 for (let i = 0; i < elementListaAccessi.length; i++) {
+
     if (elementListaAccessi[i] === elementEmail) {
-        console.log("Hai avuto accesso");
+
+        elementAccesso = true;
         break;
     }
-    else {
-        console.log("Credenziali errate")
-    }
+}
+
+// Esito
+if (elementAccesso) {
+
+    console.log("hai avuto accesso")
+}
+else {
+
+    console.log("non hai avuto accesso");
 }
